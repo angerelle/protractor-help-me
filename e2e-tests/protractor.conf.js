@@ -26,6 +26,10 @@
 */
 
 exports.config = {
+
+    getPageTimeout: 60000,
+    allScriptsTimeout: 50000,
+
     baseUrl: 'http://localhost:8000',
     // Specify the patterns for test files
     // to include in the test run
@@ -41,15 +45,19 @@ exports.config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     // Contains additional settings for cucumber-js
     cucumberOpts: {
+        require: '../features/step_definitions/*.js',
+        tags: false,
+        format: 'pretty',
+        profile: false,
+        'no-source': true
     },
     // These capabilities tell protractor about the browser
     // it should use for the tests. In this case chrome.
     capabilities: {
         'browserName': 'chrome',
-        'chromeOptions': {
-        }
+        'chromeOptions': {}
     },
     // This setting tells protractor to wait for all apps
     // to load on the page instead of just the first.
-    useAllAngular2AppRoots: true
-}
+    //useAllAngular2AppRoots: true
+};
