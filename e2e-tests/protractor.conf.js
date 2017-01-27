@@ -27,8 +27,8 @@
 
 exports.config = {
 
-    getPageTimeout: 60000,
-    allScriptsTimeout: 50000,
+ //   getPageTimeout: 60000,
+ //   allScriptsTimeout: 50000,
 
     baseUrl: 'http://localhost:8000',
     // Specify the patterns for test files
