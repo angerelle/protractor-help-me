@@ -18,8 +18,13 @@ previous version) - this meant that I could get the webdriver updated
 * Installed an older version of Cucumber JS so that the 
 protractor-cucumber-framework would install `npm install cucumber@^0.9.1`
 
-* Copied protractor config from <http://fizzylogic.nl/2016/10/14/How-to-write-ATDD-tests-with-cucumber-js-protractor-and-typescript/>
+* Copied protractor config from <http://fizzylogic.nl/2016/10/14/How-to-write-ATDD-tests-with-cucumber-js-protractor-and-typescript/>,
+commented out the `useAllAngular2AppRoots: true` line.
 
+
+## ?
+
+Why do we need callback on some steps, and not on others?  For example the link clicky one?
 
 
 
